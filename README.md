@@ -27,18 +27,19 @@ This project implements the **PCY (Park-Chen-Yu) Algorithm** using PySpark to an
    ```bash
    !wget -q http://archive.apache.org/dist/spark/spark-3.1.1/spark-3.1.1-bin-hadoop3.2.tgz
    !tar xf spark-3.1.1-bin-hadoop3.2.tgz
-   Or download it manually from [Apache Spark Archive](http://archive.apache.org/dist/spark/spark-3.1.1/).
+   ```
+    Or download it manually from [Apache Spark Archive](http://archive.apache.org/dist/spark/spark-3.1.1/).
 
 2. **Install PySpark**:
    You can install `findspark` to help with Spark integration in your Python environment:
    ```bash
    !pip install -q findspark
-
+    ```
 3. **Download the Basket Data**:
    Ensure the `baskets.csv` file is available in your directory. For example:
    ```python
    path = "/content/drive/MyDrive/baskets.csv"
-
+    ```
 ## How to Run the Project
 1. Clone the repository.
 2. Set up the environment as described above.
@@ -46,7 +47,7 @@ This project implements the **PCY (Park-Chen-Yu) Algorithm** using PySpark to an
 4. Run the script using:
    ```bash
    spark-submit pcy_algorithm.py
-
+    ```
 ## Output Files
 - `pcy_frequent_pairs.csv`: Contains frequent item pairs based on the support threshold.
 - `pcy_association_rules.csv`: Contains association rules generated from the frequent item pairs.
